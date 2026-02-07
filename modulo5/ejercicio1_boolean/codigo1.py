@@ -7,6 +7,7 @@ es_finde = False
 
 # TODO 1: Usa una expresión booleana con "and"
 # Por ejemplo: ¿Puede salir hoy solo si tiene 18 años o más Y si tiene permiso?
+
 puede_salir = edad >= 18 and tiene_permiso
 print("¿Puede salir hoy (and)?", puede_salir)
 
@@ -19,6 +20,7 @@ print("¿Puede salir hoy si es fin de semana o tiene permiso?", puede_salir_fin_
 
 # TODO 3: Usa una expresión booleana con "not" para negar una condición
 # Por ejemplo: De ninguna manera tiene permiso
+
 no_tiene_permiso = not tiene_permiso
 print("¿No tiene permiso?", no_tiene_permiso)
 
