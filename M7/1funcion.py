@@ -20,6 +20,7 @@ print("Importando el módulo random...")
 import random  
 
 def lanzar_dado():
+
     """""
     Simula el lanzamiento de un dado de seis caras.
 
@@ -30,7 +31,9 @@ def lanzar_dado():
     """
     # TODO: Paso 2. Genera un número aleatorio entre 1 y 6.
     #Guardalo en una variable llamada 'resultado'.
+
     resultado = random.randint(1, 6)
+
     # TODO: Paso 3. Devuelve el resultado.
     return resultado
 
