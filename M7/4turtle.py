@@ -10,8 +10,19 @@
 
 # Importaciones necesarias
 import math
+
 import turtle
 turtle.speed(0)  # Aumenta la velocidad de dibujo   
+
+#from turtle import make_turtle, forward, left, right, penup, pendown
+import turtle
+
+# 1. Iniciar ventana y objeto de tortuga
+window = turtle.Screen()
+t = turtle.Turtle() 
+t.speed(3)
+
+
 
 def triangulo(longitud, angulo):
     """
@@ -92,12 +103,19 @@ def dibujar_tarta(n_porciones, longitud):
     # Paso 5: Dibujar todas las porciones
     # --------------------------------
     
+    
     # TODO:
     # Escribe un bucle for que:
     # 1. Llame a la función triangulo(...)
     # 2. Gire la tortuga el ángulo necesario
     #    para dibujar la siguiente porción.
     
+    ###### for _ in range(n_porciones):
+        # triangulo(...)
+        # turtle.left(...)
+    pass
+########
+
     # for ...:
     #     triangulo(...)
     #     left(...)
@@ -111,9 +129,15 @@ def dibujar_tarta(n_porciones, longitud):
 # ==================================
 # Bloque para probar la función
 # ==================================
+####turtle.speed(5) # Ajusta la velocidad (1-10)
+#####turtle.shape("turtle")
+
 
 ventana = turtle.Screen()
 ventana.setup(width=600, height=400)
+
+#make_turtle(height=400, width=600)
+
 
 # ----------------------------------
 # Prueba 1
@@ -132,7 +156,8 @@ dibujar_tarta(5, 80)
 # 2. Muévete a otra posición.
 # 3. Baja el lápiz (pendown()).
 # 4. Dibuja otra tarta con diferentes valores.
-
+#### turtle.penup()
+#### turtle.goto()
 
 
 # ----------------------------------
@@ -140,6 +165,7 @@ dibujar_tarta(5, 80)
 # ----------------------------------
 
 print("Dibujando una tarta de 8 porciones...")
+
 turtle.penup()
 turtle.goto(-150, 0)  # Mueve la tortuga a una nueva posición
 turtle.pendown()
@@ -147,3 +173,7 @@ print ("Dibujando una tarta de 8 porciones...")
 dibujar_tarta(8, 80)
 
 turtle.done()  # Mantiene la ventana abierta hasta que el usuario la cierre
+
+dibujar_tarta(8, 60)
+####turtle.done()
+
